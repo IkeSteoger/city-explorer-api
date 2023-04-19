@@ -2,7 +2,8 @@
 
 **Author**: Ike Steoger
 
-**Version**: 1.0.0 - repo, file creation, readme updates, etc.
+**Version**: 1.1.0 - completed front end & backend set up in temporary
+1.0.0 - repo, file creation, readme updates, etc.
 
 ## Overview
 
@@ -26,12 +27,22 @@ This project makes use `NPM` via `Express`, `dotenv`, and `Cors`.
 
 ## Feature Completion Estimations
 
->Name of feature: 
+>Name of feature: Weather (placeholder)
 >
->Estimate of time needed to complete: 
+>Estimate of time needed to complete: 2 hours
 >
->Start time: 
+>Start time: 1pm
+>
+>Finish time: 4pm
+>
+>Actual time needed to complete: 3 hours
+
+>Name of feature: Errors
+>
+>Estimate of time needed to complete: 1 hour
+>
+>Start time: 4pm
 >
 >Finish time: 
 >
->Actual time needed to complete: 
+>Actual time needed to complete:
