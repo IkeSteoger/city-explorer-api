@@ -29,7 +29,7 @@ app.get('/weather', (request, response, next) => {
     let lon = request.query.lon;
     let searchQuery = request.query.searchQuery;
 
-    let foundCity = weatherData.find(city => (city.city_name === searchQuery) || (city.lon === lon) || (city.lat === lat));
+    let foundCity = weatherData.find(city => (city.city_name.toLowerCase() === searchQuery.toLowerCase()) || (city.lon === lon) || (city.lat === lat));
     let dataToSend = new Forecast(foundCity);
     console.log(dataToSend);
 
