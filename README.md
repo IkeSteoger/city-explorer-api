@@ -23,6 +23,7 @@ This project makes use `NPM` via `Express`, `dotenv`, and `Cors`.
 
 ## Wireframes
 
+![Lab08 Wireframe](/public/lab08wireframe.jpg)
 ![Lab07 Wireframe](/public/lab07wireframe.jpg)
 
 ## Feature Completion Estimations
@@ -42,6 +43,16 @@ This project makes use `NPM` via `Express`, `dotenv`, and `Cors`.
 >Estimate of time needed to complete: 1 hour
 >
 >Start time: 4pm
+>
+>Finish time: 6:30pm
+>
+>Actual time needed to complete: 2.5 hours
+
+>Name of feature: Weather (complete)
+>
+>Estimate of time needed to complete: 2 hours
+>
+>Start time: 2pm
 >
 >Finish time: 
 >
