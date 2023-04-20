@@ -2,7 +2,8 @@
 
 **Author**: Ike Steoger
 
-**Version**: 1.2.0 - front and backend communicating in multiple methods via /weather & /movies
+**Version**: 1.2.1 - refactor movies & weather into modules / no functionality changes
+1.2.0 - front and backend communicating in multiple methods via /weather & /movies
 1.1.0 - completed front end & backend set up in temporary
 1.0.0 - repo, file creation, readme updates, etc.
 
@@ -11,6 +12,8 @@
 This application is used to test and learn about backend server setups. Completed for Code301d98.
 
 ## Getting Started
+
+To get started with this code you could copy all the code & make sure to add a .env file with your own information (see: .env.sample)
 
 ## Architecture
 
@@ -76,3 +79,12 @@ Kyle W. [https://github.com/K1ng-T0ast]
 >
 >Actual time needed to complete: 2 hours
 
+>Name of feature: Backend Modularization
+>
+>Estimate of time needed to complete: 2 hours
+>
+>Start time: 11:00pm
+>
+>Finish time: 11:30pm
+>
+>Actual time needed to complete: 30 mins
