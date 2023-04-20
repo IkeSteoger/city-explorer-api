@@ -2,7 +2,8 @@
 
 **Author**: Ike Steoger
 
-**Version**: 1.1.0 - completed front end & backend set up in temporary
+**Version**: 1.2.0 - front and backend communicating in multiple methods via /weather & /movies
+1.1.0 - completed front end & backend set up in temporary
 1.0.0 - repo, file creation, readme updates, etc.
 
 ## Overview
@@ -13,13 +14,20 @@ This application is used to test and learn about backend server setups. Complete
 
 ## Architecture
 
-This project makes use `NPM` via `Express`, `dotenv`, and `Cors`.
+This project makes use `NPM` via `Express`, `dotenv`, `Cors`, and `Axios`.
 
 ## Change Log
+
+4/19/2023 - Tons of work with WeatherBit API and TheMovieDB API, sending info to main city-explorer
 
 4/18/2023 - Backend set up to work with front end [http://github.com/IkeSteoger/city-explorer]
 
 ## Credit and Collaborations
+
+Kaeden O. [https://github.com/KaedenOC]
+
+Kyle W. [https://github.com/K1ng-T0ast]
+
 
 ## Wireframes
 
@@ -54,6 +62,17 @@ This project makes use `NPM` via `Express`, `dotenv`, and `Cors`.
 >
 >Start time: 2pm
 >
->Finish time: 
+>Finish time: 4pm
 >
->Actual time needed to complete:
+>Actual time needed to complete: 2 hours
+
+>Name of feature: Movies
+>
+>Estimate of time needed to complete: 2 hours
+>
+>Start time: 4pm
+>
+>Finish time: 6pm
+>
+>Actual time needed to complete: 2 hours
+
