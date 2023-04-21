@@ -2,20 +2,28 @@
 
 const axios = require('axios');
 
+let cache = {};
+
 async function getWeather(request, response, next) {
   try {
     let lat = request.query.lat;
     let lon = request.query.lon;
-    let searchQuery = request.query.searchQuery;
+    let key = `lat:${lat}-lon:${lon}`;
 
-    let url = `http://api.weatherbit.io/v2.0/forecast/daily?key=${process.env.WEATHER_API_KEY}&lat=${lat}&lon=${lon}`;
+    if(cache[key] && (Date.now() - cache[key].timeStamp) < 8.64e+7){
+      response.status(200).send(cache[key].data);
+    } else {
+      let url = `http://api.weatherbit.io/v2.0/forecast/daily?key=${process.env.WEATHER_API_KEY}&lat=${lat}&lon=${lon}`;
+      let weatherData = await axios.get(url);
+      let dataToSend = weatherData.data.data.map(obj => new Forecast(obj));
 
-    let weatherData = await axios.get(url);
+      cache[key] = {
+        data: dataToSend,
+        timeStamp: Date.now(),
+      };
 
-    let dataToSend = weatherData.data.data.map(obj => new Forecast(obj));
-
-    response.status(200).send(dataToSend);
-
+      response.status(200).send(dataToSend);
+    }
   } catch (error) {
     next(error);
   }
